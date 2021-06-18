@@ -19,5 +19,12 @@ Compartilho aqui os scripts **PowerShell**
 - Sai do programa
 
 
+## Execution
+
+Enable execution of PowerShell scripts:
+
+    PS> Set-ExecutionPolicy RemoteSigned
+
+
 LinkedIn     : [https://www.linkedin.com/in/mvrosait/](https://www.linkedin.com/in/mvrosait/)  
 GitHub       : [https://github.com/MvRosa](https://github.com/MvRosa)  
