@@ -24,6 +24,7 @@ Compartilho aqui os scripts **PowerShell**
 Permitir a execução de scripts PowerShell:
 
     PS> Set-ExecutionPolicy RemoteSigned
+    PS> .\TOOLS.ps1
 
 
 LinkedIn     : [https://www.linkedin.com/in/mvrosait/](https://www.linkedin.com/in/mvrosait/)  
