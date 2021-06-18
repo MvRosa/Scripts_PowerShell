@@ -19,9 +19,9 @@ Compartilho aqui os scripts **PowerShell**
 - Sai do programa
 
 
-## Execution
+## Execução
 
-Enable execution of PowerShell scripts:
+Permitir a execução de scripts PowerShell:
 
     PS> Set-ExecutionPolicy RemoteSigned
 
