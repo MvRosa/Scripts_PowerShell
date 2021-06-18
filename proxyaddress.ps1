@@ -1,0 +1,2 @@
+$path = "reports\proxyaddress"
+Get-ADUser -Filter 'ProxyAddresses -like "*:*@domain.com"' -Properties * | Select-Object Enabled,SamAccountName,@{n="proxyAddress";e={$_.proxyAddresses | Where-Object {$_ -clike "*:*@domain.com"}}} | Export-CSV $path\proxyaddress_smtp.csv -NoTypeInformation -Encoding Utf8

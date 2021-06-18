@@ -1,0 +1,1 @@
+copy-item "\\srvapp\Java\Sun\Java\Deployment" -destination "$env:USERPROFILE\AppData\LocalLow\Sun\Java" -Recurse -Force
