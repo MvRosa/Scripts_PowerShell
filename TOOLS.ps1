@@ -79,7 +79,7 @@ do
 	.\relatorio_rdp_TS10.ps1
 	} '08' {
 	Clear-Host
-	Invoke-Command -ScriptBlock { Start-ADSyncSyncCycle -PolicyType delta } -ComputerName NAMEPC
+	Invoke-Command -ScriptBlock { Start-ADSyncSyncCycle -PolicyType delta } -ComputerName HOSTNAME
 	} '09' {
 	Clear-Host
 	.\proxyaddress.ps1
