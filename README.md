@@ -27,5 +27,10 @@ Permitir a execução de scripts PowerShell:
     PS> .\TOOLS.ps1
 
 
+## Responsabilidade
+
+**Todos os scripts são fornecidos no estado em que se encontram e você os usa por sua própria conta e risco.**
+
+
 LinkedIn     : [https://www.linkedin.com/in/mvrosait/](https://www.linkedin.com/in/mvrosait/)  
 GitHub       : [https://github.com/MvRosa](https://github.com/MvRosa)  
