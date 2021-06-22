@@ -23,7 +23,7 @@ Compartilho aqui os scripts **PowerShell**
 
 Permitir a execução de scripts PowerShell:
 
-    PS> Set-ExecutionPolicy RemoteSigned
+    PS> Set-ExecutionPolicy Unrestricted
     PS> .\TOOLS.ps1
 
 
