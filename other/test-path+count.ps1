@@ -4,16 +4,16 @@ $FileList = Get-Content "C:\TEMP\teste.csv"
 foreach ($file in $FileList) {
     $path = Test-Path $file
     If ($path -eq $true) {
-        $Output = "SIM"
+        $Output = (Get-ChildItem $file).Count
     }
     Else {    
-        $Output = "NAO"
+        $Output = "Not Exists"
     }
     $details = @{
-        Pasta = $file
-        Existe = $Output 
+        File = $file
+        Exist = $Output 
     }
     $results += New-Object PSObject -Property $details  
 }
 
-$results | select-object -property Pasta, Existe | Export-csv C:\TEMP\result.csv -NoTypeInformation
+$results | select-object -property File, Exist | Export-csv C:\TEMP\result.csv -NoTypeInformation
