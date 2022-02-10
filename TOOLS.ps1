@@ -1,9 +1,11 @@
 <# 
-.NOTES
-    Name: Marcus Rosa
+ .EXAMPLE
+	PS .\TOOL.ps1
+ .NOTES
+	Name: Marcus Rosa
 	E-mail: mvrosa@outlook.com.br
-.EXAMPLE
-    PS .\TOOL.ps1
+.LINK
+	GitHub: https://github.com/mvrosa   
 #>
 
 $directorypath = (Get-Item -Path ".\").FullName
