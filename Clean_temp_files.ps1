@@ -1,4 +1,4 @@
-﻿<# 
+<# 
 .NAME
     Limpeza de arquivos temporarios
 .EXAMPLE
@@ -21,18 +21,26 @@ Write-Host -ForegroundColor Green "Clearing Firefox Cache`n"
     Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default\chromeappsstore.sqlite" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
     Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default\OfflineCache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
 
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\cache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\cache2\entries\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\thumbnails\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\cookies.sqlite" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\webappsstore.sqlite" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\chromeappsstore.sqlite" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Mozilla\Firefox\Profiles\*.default-release\OfflineCache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+
 Write-Host -ForegroundColor Yellow "Done...`n"
 
 
 # Clear Google Chrome
 Write-Host -ForegroundColor Green "Clearing Google Chrome Cache`n"
 
-    Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
-    Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cache2\entries\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
-    Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cookies" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
-    Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Media Cache" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
-    Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cookies-Journal" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
-    Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsOld" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    #Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    #Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cache2\entries\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    #Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cookies" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    #Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Media Cache" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    #Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cookies-Journal" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    #Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsOld" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
 
     Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
     Remove-Item -Path "C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cache2\entries\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose 
@@ -50,6 +58,13 @@ Write-Host -ForegroundColor Yellow "Clearing Internet Explorer & Edge Cache`n"
     Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Windows\Temporary Internet Files\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
     Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Windows\INetCache\* " -Recurse -Force -ErrorAction SilentlyContinue -Verbose
     Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Windows\WebCache\* " -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+
+    Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Edge\User Data\*\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Edge\User Data\*\Cache2\entries\*" -Recurse -Force -ErrorAction SilentlyContinue -Verbose 
+    Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Edge\User Data\*\Cookies" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Edge\User Data\*\Media Cache" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Edge\User Data\*\Cookies-Journal" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
+    Remove-Item -Path "C:\Users\*\AppData\Local\Microsoft\Edge\User Data\*\JumpListIconsOld" -Recurse -Force -ErrorAction SilentlyContinue -Verbose
 
 Write-Host -ForegroundColor Yellow "Done...`n"
 
