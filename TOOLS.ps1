@@ -62,7 +62,7 @@ do
 	} '03' {
 	Clear-Host
 	#PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell.exe -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""C:\Scripts\Limpeza_v1.ps1""' -Verb RunAs}"
-	.\Limpeza_v1.ps1
+	.\Clean_temp_files.ps1
 	} '04' {
 	Clear-Host
 	.\maquina_dominio.ps1
